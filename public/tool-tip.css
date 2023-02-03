@@ -1,0 +1,50 @@
+.mark {
+  position: relative;
+}
+.mark::before, .mark::after {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  transition: opacity 0.15s ease-in-out, visibility 0s 0.15s ease-in-out;
+  visibility: hidden;
+}
+.mark::before {
+  border-bottom: 10px solid rgb(31, 41, 55);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+  height: 0;
+  transform: translateX(-50%) translateY(calc(-100% + 1px));
+  width: 0;
+  z-index: 1;
+}
+.mark::after {
+  background-color: rgb(31, 41, 55);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  content: "Verified";
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5em 1.25em;
+  transform: translate3d(-50%, 0, 0);
+  white-space: nowrap;
+  z-index: 1;
+}
+.mark::before, .mark::after {
+  bottom: calc(100% + 0.75rem);
+  top: auto;
+}
+.mark::before {
+  transform: translateX(-50%) translateY(calc(100% - 1px)) rotateZ(180deg);
+}
+.mark:hover::before, .mark:hover::after, .mark:focus::before, .mark:focus::after {
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+  visibility: visible;
+}
+@media (hover: none) {
+  .mark::before, .mark::after {
+    content: none;
+  }
+}

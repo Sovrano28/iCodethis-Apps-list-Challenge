@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apps List: iCodethis Challenge</title>
   <link rel="stylesheet" href="public/styles.css">
+  <link rel="stylesheet" href="public/tool-tip.css">
 </head>
 <body class="bg-white text-gray-800">
   <div id="header" class="container mx-auto px-10">
-    <div class="flex flex-col items-center mt-10 space-y-8">
-      <div class="text-4xl font-bold">
+    <div class="flex flex-col items-center mt-14 space-y-4">
+      <div class="text-xl font-bold">
         Recently Added
       </div>
       <div class="text-center">
@@ -23,6 +24,7 @@
 
     <!--? column 1 -->
     <div id="col-1" class="flex flex-col space-y-8">
+
       <div id="col-1-no-1" class="flex flex-row space-x-6">
         <div>
           <div class="rounded-full shadow-md px-2 py-5 w-[76.72px] text-center">
@@ -32,8 +34,8 @@
         <div class="flex flex-col space-y-6">
           <div class="flex flex-row space-x-2 items-center">
             <div class="font-bold text-lg">Instabug</div>
-            <div>
-              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
+            <div class="mark">
+              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4 brightness-90">
             </div>
           </div>
           <div class="max-w-lg">
@@ -41,49 +43,8 @@
           </div>
         </div>
       </div>
+
       <div id="col-1-no-2" class="flex flex-row space-x-6">
-        <div>
-          <div class="rounded-full shadow-md px-2 py-5 w-[76.72px] text-center">
-            <img class="h-10" src="public/imgs/" alt="">
-          </div>
-        </div>
-        <div class="flex flex-col space-y-6">
-          <div class="flex flex-row space-x-2 items-center">
-            <div class="font-bold text-lg"></div>
-            <div>
-              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
-            </div>
-          </div>
-          <div class="max-w-lg">
-          </div>
-        </div>
-      </div>
-      <div id="col-1-no-3" class="flex flex-row space-x-6">
-        <div>
-          <div class="rounded-full shadow-md overflow-hidden py-3 w-[76.72px] text-center">
-            <img class="w-3/4 m-auto" src="public/imgs/gamma.jpeg" alt="gamma ai">
-          </div>
-        </div>
-        <div class="flex flex-col space-y-6">
-          <div class="flex flex-row space-x-2 items-center">
-            <div class="font-bold text-lg">
-              Gamma Data Leak Prevention
-            </div>
-            <div>
-              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
-            </div>
-          </div>
-          <div class="max-w-lg">
-            Leon Board is a collaborative whiteboard with sticky notes which seamlessly connect with your Github issue.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--? column 2 -->
-    <div id="col-2" class="flex flex-col space-y-8">
-
-      <div id="col-2-no-2" class="flex flex-row space-x-6">
         <div>
           <div class="rounded-full shadow-md overflow-hidden w-[76.72px] text-center">
             <img class="w-full" src="public/imgs/deepscan-full.png" alt="deepscan">
@@ -92,7 +53,7 @@
         <div class="flex flex-col space-y-6">
           <div class="flex flex-row space-x-2 items-center">
             <div class="font-bold text-lg">Deepscan</div>
-            <div>
+            <div class="mark">
               <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
             </div>
           </div>
@@ -102,11 +63,95 @@
         </div>
       </div>
 
+      <div id="col-1-no-3" class="flex flex-row space-x-6">
+        <div>
+          <div class="rounded-full shadow-md overflow-hidden py-3 w-[76.72px] text-center">
+            <img class="w-3/4 m-auto" src="public/imgs/gamma.jpeg" alt="gamma ai">
+          </div>
+        </div>
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row space-x-2 items-center">
+            <div class="font-bold text-lg">
+              Gamma Data
+            </div>
+            <div class="mark">
+              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
+            </div>
+          </div>
+          <div class="max-w-lg">
+            Leon Board is a collaborative whiteboard with sticky notes which seamlessly connect with your Github issue.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--? column 2 -->
+    <div id="col-2" class="flex flex-col space-y-8">
+
+      <div id="col-2-no-1" class="flex flex-row space-x-6">
+        <div>
+          <div class="rounded-full shadow-md overflow-hidden w-[76.72px] text-center">
+            <img class="w-full" src="public/imgs/deepscan-full.png" alt="deepscan">
+          </div>
+        </div>
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row space-x-2 items-center">
+            <div class="font-bold text-lg">Deepscan</div>
+            <div class="mark">
+              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
+            </div>
+          </div>
+          <div class="max-w-lg">
+            October helps you manage your notifications in the same way Gmail helps you manage your email.
+          </div>
+        </div>
+      </div>
+
+      <div id="col-2-no-2" class="flex flex-row space-x-6">
+        <div>
+          <div class="rounded-full shadow-md overflow-hidden py-3 w-[76.72px] text-center">
+            <img class="w-3/4 m-auto" src="public/imgs/gamma.jpeg" alt="gamma ai">
+          </div>
+        </div>
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row space-x-2 items-center">
+            <div class="font-bold text-lg">
+              Gamma Data
+            </div>
+            <div class="mark">
+              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
+            </div>
+          </div>
+          <div class="max-w-lg">
+            Leon Board is a collaborative whiteboard with sticky notes which seamlessly connect with your Github issue.
+          </div>
+        </div>
+      </div>
+
+      <div id="col-3-no-3" class="flex flex-row space-x-6">
+        <div>
+          <div class="rounded-full shadow-md px-2 py-5 w-[76.72px] text-center">
+            <img class="h-10" src="public/imgs/instabug-icon-seeklogo.com.svg" alt="instabug">
+          </div>
+        </div>
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row space-x-2 items-center">
+            <div class="font-bold text-lg">Instabug</div>
+            <div class="mark">
+              <img src="public/imgs/tick-mark.png" alt="green check" class="h-4">
+            </div>
+          </div>
+          <div class="max-w-lg">
+            The top apps in the world rely on instabug for bug reporting, crash reporting and in-app user feedback
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <div class="mt-12 container mx-auto px-10 text-center">
+  <div class="mt-16 mb-12 container mx-auto px-10 text-center">
     <a href="#" class="pt-2 px-6 pb-3 bg-gray-800 text-white rounded baseline hover:bg-gray-700">View all</a>
   </div>
   
